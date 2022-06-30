@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта">
+    <title>PressPass Test Task</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <a class="header__logo" href="#">
+            <svg width="196" height="52" aria-label="Логотип">
+              <use xlink:href="img/sprite_auto.svg#logo"></use>
+            </svg>
+          </a>
+          <nav class="header__nav">
+            <ul class="header__navlist">
+              <li class="header__navitem">
+                <a href="sitemap.html" class="header__navlink">О Находке</a>
+              </li>
+              <li class="header__navitem">
+                <a href="sitemap.html" class="header__navlink">Пройдите опрос</a>
+              </li>
+              <li class="header__navitem">
+                <a href="sitemap.html" class="header__navlink">Проекты Находки</a>
+              </li>
+              <li class="header__navitem">
+                <a href="sitemap.html" class="header__navlink">Обсуждения</a>
+              </li>
+              <li class="header__navitem">
+                <a href="sitemap.html" class="header__navlink">Новости</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="content-wrapper">
+          <section class="page-nav">
+            <a class="page-nav__back" href="sitemap.html">
+              <svg width="5" height="10" aria-label="Назад">
+                <use xlink:href="img/sprite_auto.svg#arrow-left"></use>
+              </svg>
+              <span>
+                Назад
+              </span>
+            </a>
+            <h1>Поделитесь идеей</h1>
+          </section>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <fieldset>
+              <h2>Расскажите кем вы приходитесь городу</h2>
+              <label for="citizen">
+                <input type="radio" name="visitor-type" value="citizen" id="citizen" required>
+                <span></span>
+                <p>Местный житель</p>
+              </label>
+              <label for="guest">
+                <input type="radio" name="visitor-type" value="guest" id="guest">
+                <span></span>
+                <p>Гость города</p>
+              </label>
+            </fieldset>
+            <fieldset>
+              <h2>Ваш возраст</h2>
+              <label for="18-">
+                <input type="radio" name="visitor-age" value="18-" id="18-" required>
+                <span></span>
+                <p>До 18</p>
+              </label>
+              <label for="19-25">
+                <input type="radio" name="visitor-age" value="19-25" id="19-25">
+                <span></span>
+                <p>19-25</p>
+              </label>
+              <label for="26-35">
+                <input type="radio" name="visitor-age" value="26-35" id="26-35">
+                <span></span>
+                <p>26-35</p>
+              </label>
+              <label for="36-45">
+                <input type="radio" name="visitor-age" value="36-45" id="36-45">
+                <span></span>
+                <p>36-45</p>
+              </label>
+              <label for="46-55">
+                <input type="radio" name="visitor-age" value="46-55" id="46-55">
+                <span></span>
+                <p>46-55</p>
+              </label>
+              <label for="56-65">
+                <input type="radio" name="visitor-age" value="56-65" id="56-65">
+                <span></span>
+                <p>56-65</p>
+              </label>
+              <label for="66+">
+                <input type="radio" name="visitor-age" value="66+" id="66+">
+                <span></span>
+                <p>Больше 66</p>
+              </label>
+            </fieldset>
+            <fieldset>
+              <h2>Вы хотите рассказать</h2>
+              <label for="problem">
+                <input type="radio" name="visitor-about" value="problem" id="problem" required>
+                <span></span>
+                <p>О проблеме и ее решении</p>
+              </label>
+              <label for="idea">
+                <input type="radio" name="visitor-about" value="idea" id="idea">
+                <span></span>
+                <p>О идее города</p>
+              </label>
+              <label for="places">
+                <input type="radio" name="visitor-about" value="places" id="places">
+                <span></span>
+                <p>Об уникальных интересных местах Находки</p>
+              </label>
+            </fieldset>
+            <fieldset>
+              <h2>Загрузите картинку и укажите место на карте</h2>
+              <div class="fieldset-wrapper">
+                <a href="sitemap.html">
+                  <svg width="15" height="19" aria-label="Указать геолокацию">
+                    <use xlink:href="img/sprite_auto.svg#location-icon"></use>
+                  </svg>
+                  <span>Указать геолокацию</span>
+                </a>
+                <label for="image-upload">
+                  <input class="visually-hidden" type="file" name="image-upload" value="image-upload" id="image-upload" accept="image/jpeg, image/png" required>
+                  <span>
+                    <svg width="20" height="18" aria-label="Добавить изображение">
+                      <use xlink:href="img/sprite_auto.svg#image-icon"></use>
+                    </svg>
+                    <span>Добавить изображение</span>
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <h2>Укажите тему и расскажите идею</h2>
+              <label>
+                <input type="text" placeholder="Тема" name="topic" required>
+              </label>
+              <textarea placeholder="Идея" name="text" rows="3" required></textarea>
+              <label for="policy">
+                <input type="checkbox" name="policy" value="policy" id="policy" required>
+                <span></span>
+                <p>Я согласен с <a href="sitemap.html">политикой обработки персональных данных</a></p>
+              </label>
+            </fieldset>
+            <button class="btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__content">
+            <a class="footer__logo" href="#">
+              <svg width="376" height="100" aria-label="Логотип">
+                <use xlink:href="img/sprite_auto.svg#logo"></use>
+              </svg>
+            </a>
+            <ul class="footer__links">
+              <li><a class="footer__link" href="sitemap.html">О Находке</a></li>
+              <li><a class="footer__link" href="sitemap.html">Пройдите опрос</a></li>
+              <li><a class="footer__link" href="sitemap.html">План комплексного развития</a></li>
+              <li><a class="footer__link" href="sitemap.html">Обсуждения</a></li>
+              <li><a class="footer__link" href="sitemap.html">Новости</a></li>
+            </ul>
+            <div class="footer__more">
+              <a href="mailto:call@my-nakhodka.ru" class="footer__email">
+                <svg width="20" height="15" aria-label="E-mail">
+                  <use xlink:href="img/sprite_auto.svg#mail-icon"></use>
+                </svg>
+                <span>call@my-nakhodka.ru</span>
+              </a>
+              <a class="footer__policy" href="sitemap.html">Политика обработки персональных данных</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Модалки -->
+    <div class="modal modal--preload" data-modal="feedback">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <p class="modal__description">Обычная модалка</p>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
