@@ -12,6 +12,17 @@
 
   transition: opacity $trans-default;
 
+  svg {
+    width: 376px;
+    height: 100px;
+
+    @include vp-1023 {
+      width: 263px;
+      height: 75px;
+    }
+  }
+
+
   @media (hover: hover), screen and (min-width: 0\0) {
     &:hover,
     &:focus {
@@ -21,7 +32,7 @@
 }
 
 .footer__links {
-  margin: 0;
+  margin: 0 0 0 10px;
   padding: 0;
   list-style: none;
 
@@ -30,6 +41,10 @@
 
     &:not(:last-child) {
       margin-bottom: 31px;
+    }
+
+    @include vp-1279 {
+      width: 200px;
     }
   }
 
@@ -52,6 +67,11 @@
   margin-right: 63px;
   display: flex;
   flex-direction: column;
+
+  @include vp-1279 {
+    margin-left: 14px;
+    margin-right: 14px;
+  }
 }
 
 .footer__email {
