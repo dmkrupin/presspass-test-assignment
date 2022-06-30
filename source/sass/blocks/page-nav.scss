@@ -1,0 +1,51 @@
+.page-nav {
+  align-self: stretch;
+  margin-top: 32px;
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  h1 {
+    margin: 0;
+    padding: 0;
+
+    align-self: flex-start;
+    font: 700 40px/48px $ff-inter;
+    letter-spacing: -0.5px;
+    color: $color-default-black-87;
+  }
+}
+
+.page-nav__back {
+  align-self: flex-start;
+  margin-bottom: 49px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  transition: opacity $trans-default;
+
+  svg {
+    width: 7px;
+    height: 12px;
+
+    margin-right: 13px;
+    position: relative;
+    top: 1px;
+    color: $color-transparent;
+  }
+
+  span {
+    font: 400 16px/24px $ff-inter;
+    letter-spacing: 0.5px;
+    color: $color-dodge-blue;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+  }
+}
