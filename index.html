@@ -18,6 +18,11 @@
             </svg>
           </a>
           <nav class="header__nav">
+            <button class="header__toggle">
+              <svg width="16" height="16" aria-label="Мобильное меню">
+                <use xlink:href="img/sprite_auto.svg#menu-icon"></use>
+              </svg>
+            </button>
             <ul class="header__navlist">
               <li class="header__navitem">
                 <a href="sitemap.html" class="header__navlink">О Находке</a>
@@ -49,7 +54,7 @@
                 Назад
               </span>
             </a>
-            <h1>Поделитесь идеей</h1>
+            <h1>Поделитесь<br> идеей</h1>
           </section>
           <form action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
@@ -143,14 +148,12 @@
             </fieldset>
             <fieldset>
               <h2>Укажите тему и расскажите идею</h2>
-              <label>
-                <input type="text" placeholder="Тема" name="topic" required>
-              </label>
+              <input type="text" placeholder="Тема" name="topic" required>
               <textarea placeholder="Идея" name="text" rows="3" required></textarea>
               <label for="policy">
                 <input type="checkbox" name="policy" value="policy" id="policy" required>
                 <span></span>
-                <p>Я согласен с <a href="sitemap.html">политикой обработки персональных данных</a></p>
+                <p>Я согласен с <a href="sitemap.html">политикой<br> обработки персональных данных</a></p>
               </label>
             </fieldset>
             <button class="btn" type="submit">Отправить</button>
