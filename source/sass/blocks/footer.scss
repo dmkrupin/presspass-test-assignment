@@ -23,6 +23,8 @@
     width: 376px;
     height: 100px;
 
+    fill: $color-pattens-blue;
+
     @include vp-1023 {
       width: 263px;
       height: 75px;

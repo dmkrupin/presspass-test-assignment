@@ -24,6 +24,8 @@
     width: 196px;
     height: 52px;
 
+    fill: $color-dodge-blue;
+
     @include vp-767 {
       width: 152px;
       height: 40px;
