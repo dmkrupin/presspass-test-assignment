@@ -677,7 +677,8 @@ button,
   transition: opacity 0.3s ease; }
   .header__logo svg {
     width: 196px;
-    height: 52px; }
+    height: 52px;
+    fill: #028af3; }
     @media (max-width: 767px) {
       .header__logo svg {
         width: 152px;
@@ -811,7 +812,7 @@ button,
     margin-right: 13px;
     position: relative;
     top: 1px;
-    color: rgba(255, 255, 255, 0); }
+    fill: rgba(255, 255, 255, 0); }
   .page-nav__back span {
     font: 400 16px/24px "Inter", "Arial", sans-serif;
     letter-spacing: 0.5px;
@@ -1157,7 +1158,8 @@ input[type="checkbox"] {
   transition: opacity 0.3s ease; }
   .footer__logo svg {
     width: 376px;
-    height: 100px; }
+    height: 100px;
+    fill: #c5ddee; }
     @media (max-width: 1023px) {
       .footer__logo svg {
         width: 263px;
