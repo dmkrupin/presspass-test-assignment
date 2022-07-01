@@ -14,11 +14,29 @@
     font: 700 40px/48px $ff-inter;
     letter-spacing: -0.5px;
     color: $color-default-black-87;
+
+    br {
+      display: none;
+    }
   }
 
   @include vp-1023 {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  @include vp-767 {
+    margin-top: 24px;
+    margin-bottom: 31px;
+
+    h1 {
+      font: 700 32px/36px $ff-inter;
+      letter-spacing: 0;
+
+      br {
+        display: block;
+      }
+    }
   }
 }
 
@@ -52,5 +70,9 @@
     &:focus {
       opacity: 0.5;
     }
+  }
+
+  @include vp-767 {
+    margin-bottom: 33px;
   }
 }
